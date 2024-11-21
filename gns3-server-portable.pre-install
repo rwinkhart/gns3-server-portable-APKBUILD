@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ -z $(getent passwd gns3) ]; then
+	addgroup -S gns3
+	adduser -SDG gns3 gns3
+	addgroup gns3 kvm
+	addgroup gns3 qemu
+fi
+exit 0
