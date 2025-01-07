@@ -7,8 +7,8 @@
 # THIS APKBUILD IS FOR PERSONAL USE ONLY.
 
 pkgname=gns3-server-portable
-pkgver=3.0.1
-pkgrel=2
+pkgver=3.0.2
+pkgrel=0
 psutilver=6.1.1
 pkgdesc="GNS3 network simulator (server)"
 url="https://github.com/GNS3/gns3-server"
@@ -73,7 +73,7 @@ package() {
 }
 
 sha512sums="
-f761e0a43edf6e03fce4160f8c6186b77316646bd3125a431c1d9100e2403afb45dee3b7c1f5c77ee4e8c974e38abbea5eb25c8f864ffe7051d5d9359e8944a3  gns3-server-$pkgver.tar.gz
+a0bf3fb56357adb3b3ef7c7e272777fac017846f7e680c764834b53595af449e0da9bef0e8b8b6e4fa73d078f2a23e07ae967d7b7f3c3ff9a4feb217567af39a  gns3-server-$pkgver.tar.gz
 db8a2f4b0b451ca46aaa21b1faae03c4328b1effd04f240a7c8efc94a1c8ca7fc080fc6d16f6ca2046b9232ec43e447be0c414b125f8f511131dc6dff95bd72c  psutil-$psutilver.tar.gz
 "
 
