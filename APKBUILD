@@ -8,13 +8,13 @@
 
 pkgname=gns3-server-portable
 pkgver=3.0.2
-pkgrel=0
+pkgrel=1
 psutilver=6.1.1
 pkgdesc="GNS3 network simulator (server)"
 url="https://github.com/GNS3/gns3-server"
 arch="all"
 license="GPL-3.0-or-later"
-depends="busybox dynamips libcap ubridge vpcs python3 qemu-system-x86_64 qemu-img"
+depends="busybox dynamips libcap ubridge vpcs python3 qemu-system-x86_64 qemu-img py3-watchdog"
 makedepends="py3-pip py3-build py3-wheel python3-dev twine linux-headers"
 options="!tracedeps"
 install="$pkgname.pre-install"
