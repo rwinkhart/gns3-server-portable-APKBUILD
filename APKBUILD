@@ -7,9 +7,9 @@
 # THIS APKBUILD IS FOR PERSONAL USE ONLY.
 
 pkgname=gns3-server-portable
-pkgver=2.2.52
+pkgver=2.2.53
 pkgrel=0
-psutilver=6.1.0
+psutilver=6.1.1
 pkgdesc="GNS3 network simulator (server)"
 url="https://github.com/GNS3/gns3-server"
 arch="all"
@@ -19,7 +19,7 @@ makedepends="py3-pip py3-setuptools py3-wheel linux-headers python3-dev"
 options="!tracedeps"
 install="$pkgname.pre-install"
 source="gns3-server-$pkgver.tar.gz::https://github.com/GNS3/gns3-server/archive/v$pkgver.tar.gz
-psutil-$psutilver.tar.gz::https://files.pythonhosted.org/packages/26/10/2a30b13c61e7cf937f4adf90710776b7918ed0a9c434e2c38224732af310/psutil-$psutilver.tar.gz"
+psutil-$psutilver.tar.gz::https://files.pythonhosted.org/packages/1f/5a/07871137bb752428aa4b659f910b399ba6f291156bdea939be3e96cae7cb/psutil-6.1.1.tar.gz"
 
 build() {
 	cd "gns3-server-$pkgver"
@@ -81,6 +81,6 @@ package() {
 }
 
 sha512sums="
-15c13a9c3ebb1b0622fee512bedce2ed77eb89b47b03f2eac81c37ec1bbf5edffa34b6fe149d61e889c2b32c752a497888fa0e8288579d24d5d5c642513ecf48  gns3-server-$pkgver.tar.gz
-76865df4fdb2a9df45e47589b76b34d0d9d9251491091683e47b4509863e32e46dc62ee2f760b983f0f762b8288d1ea7f32268a6857c049ad12f399908e19c82  psutil-$psutilver.tar.gz
+d9c8d08bab3cf9b246c90e7b35a7ff8fd9dcb29b4b16402a8bf0bd0013ff14a88ac4f0f4b0a185d257ffc86ff744cf1ef73112abe21378e3282c0b10464602d9  gns3-server-$pkgver.tar.gz
+db8a2f4b0b451ca46aaa21b1faae03c4328b1effd04f240a7c8efc94a1c8ca7fc080fc6d16f6ca2046b9232ec43e447be0c414b125f8f511131dc6dff95bd72c  psutil-$psutilver.tar.gz
 "
