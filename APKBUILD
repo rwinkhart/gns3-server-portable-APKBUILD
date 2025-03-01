@@ -7,9 +7,9 @@
 # THIS APKBUILD IS FOR PERSONAL USE ONLY.
 
 pkgname=gns3-server-portable
-pkgver=3.0.3
+pkgver=3.0.4
 pkgrel=0
-psutilver=6.1.1
+psutilver=7.0.0
 watchdogver=6.0.0
 pkgdesc="GNS3 network simulator (server)"
 url="https://github.com/GNS3/gns3-server"
@@ -20,8 +20,8 @@ makedepends="py3-pip py3-build py3-wheel python3-dev twine linux-headers"
 options="!tracedeps"
 install="$pkgname.pre-install"
 source="gns3-server-$pkgver.tar.gz::https://github.com/GNS3/gns3-server/archive/v$pkgver.tar.gz
-psutil-$psutilver.tar.gz::https://files.pythonhosted.org/packages/1f/5a/07871137bb752428aa4b659f910b399ba6f291156bdea939be3e96cae7cb/psutil-$psutilver.tar.gz
-watchdog-$watchdogver.tar.gz::https://files.pythonhosted.org/packages/db/7d/7f3d619e951c88ed75c6037b246ddcf2d322812ee8ea189be89511721d54/watchdog-$watchdogver.tar.gz"
+psutil-$psutilver.tar.gz::https://files.pythonhosted.org/packages/2a/80/336820c1ad9286a4ded7e845b2eccfcb27851ab8ac6abece774a6ff4d3de/psutil-7.0.0.tar.gz
+watchdog-$watchdogver.tar.gz::https://files.pythonhosted.org/packages/db/7d/7f3d619e951c88ed75c6037b246ddcf2d322812ee8ea189be89511721d54/watchdog-6.0.0.tar.gz"
 
 build() {
     cd "gns3-server-$pkgver"
@@ -87,7 +87,7 @@ package() {
 }
 
 sha512sums="
-28848cc615ded7da94204b1454b42a13f8792b92e5e1366acfc46c09d9fb7fc93ce9a76882b725d3470c9357ae3752434eb860d245421c50a050d70c56459836  gns3-server-$pkgver.tar.gz
-db8a2f4b0b451ca46aaa21b1faae03c4328b1effd04f240a7c8efc94a1c8ca7fc080fc6d16f6ca2046b9232ec43e447be0c414b125f8f511131dc6dff95bd72c  psutil-$psutilver.tar.gz
+761fe36c8650459187b8baf021fe4a23a4ef2a410fd966d3ca5df98fbc2ae4ab01e25d80d538da0ed6824432d0a5d95e3100d02a03130ca6dd2b81b8c073f5e7  gns3-server-$pkgver.tar.gz
+83c17e5dd975bd403d8ece3bcfe021e5b845eb53260f8857999ebc6fdea8aca83e136b945aaa0b3974dc387191988c22fcdcab03effc8e943382989a106aeaf3  psutil-$psutilver.tar.gz
 a248e05b538a894a00e38dabbc0cc7490bb1a87689aa14aac5835f611136fcf6f1e3bd45a6ca4f10991ffabd9264c72f981f4619bd77eb8baf297d015975d57f  watchdog-$watchdogver.tar.gz
 "
