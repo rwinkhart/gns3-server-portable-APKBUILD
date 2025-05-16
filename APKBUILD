@@ -7,7 +7,7 @@
 # THIS APKBUILD IS FOR PERSONAL USE ONLY.
 
 pkgname=gns3-server-portable
-pkgver=3.0.4
+pkgver=3.0.5
 pkgrel=0
 psutilver=7.0.0
 watchdogver=6.0.0
@@ -87,7 +87,7 @@ package() {
 }
 
 sha512sums="
-761fe36c8650459187b8baf021fe4a23a4ef2a410fd966d3ca5df98fbc2ae4ab01e25d80d538da0ed6824432d0a5d95e3100d02a03130ca6dd2b81b8c073f5e7  gns3-server-$pkgver.tar.gz
+83d074eb22ef8262bd7da9ed8a2fd65071f8f895a0e637ee5d0ed794a1a86525c42f16cee9343b04a93cf78f9c201ed8d64508aa572ce855f697c284a78da605  gns3-server-$pkgver.tar.gz
 83c17e5dd975bd403d8ece3bcfe021e5b845eb53260f8857999ebc6fdea8aca83e136b945aaa0b3974dc387191988c22fcdcab03effc8e943382989a106aeaf3  psutil-$psutilver.tar.gz
 a248e05b538a894a00e38dabbc0cc7490bb1a87689aa14aac5835f611136fcf6f1e3bd45a6ca4f10991ffabd9264c72f981f4619bd77eb8baf297d015975d57f  watchdog-$watchdogver.tar.gz
 "
